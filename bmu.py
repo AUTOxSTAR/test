@@ -4,8 +4,10 @@ def BMI(w,h):
     return w/(h*h)
 
 #w = float(input('請輸入體重(KG)?'))
-w = float(input('請輸入體重(KG)？'))
-h = float(input('請輸入身高(M)？'))
+w = st.number_input('請輸入體重(KG)？')
+h = st.number_input('請輸入身高(M)？')
+st.button('請輸入確認')
+
 bmi = BMI(w, h)
 #print('BMI為', bmi)
 st.write('BMI為')
