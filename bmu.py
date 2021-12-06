@@ -10,7 +10,7 @@ confirm_input = st.button('請輸入確認')
 if confirm_input:
     bmi = BMI(w, h)
     #print('BMI為', bmi)
-    st.write('BMI為')
+    st.write('BMI為',bmi)
     if (bmi < 18):
         print('體重過輕')
     elif (bmi < 24):
